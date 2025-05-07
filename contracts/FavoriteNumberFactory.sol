@@ -8,7 +8,7 @@ contract FavoriteNumberFactory {
     FavoriteNumber[] public favoriteNumberList;
 
     function createFavoriteNumberContract(uint256 _deployerFaveNumber) public {
-        favoriteNumberList.push(new FavoriteNumber());
+        favoriteNumberList.push(new FavoriteNumber(_deployerFaveNumber));
     }
 
     function fAddFriend(

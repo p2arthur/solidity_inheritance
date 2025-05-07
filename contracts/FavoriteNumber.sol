@@ -5,6 +5,10 @@ contract FavoriteNumber {
     // The visibility internal means that we only have access to this variable from within the same contract - there are other types of visibility
     uint256 public myFaveNumber;
 
+    constructor(uint256 _number){
+        myFaveNumber = _number;
+    }
+
     // Structs are used to define our own types in a solidity code
     struct Person {
         string name;

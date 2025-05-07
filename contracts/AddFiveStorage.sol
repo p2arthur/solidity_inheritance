@@ -6,6 +6,9 @@ import {FavoriteNumber} from "./FavoriteNumber.sol";
 
 //Inheritance - We want to override some method from a parent contract
 contract AddFiveFaveNumber is FavoriteNumber {
+
+    constructor (uint256 _number) FavoriteNumber(_number) {}
+
     //overrides
     //virtual overrides
     // Memory means that the variable will only be alive during the excution of the given function
